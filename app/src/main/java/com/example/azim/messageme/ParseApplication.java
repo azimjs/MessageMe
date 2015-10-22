@@ -37,7 +37,7 @@ import java.util.UUID;
 
 
 public class ParseApplication extends Application {
-
+//Ajays changes --2
     private BeaconManager beaconManager;
     static final List<Beacons> BEACONS_LIST = new ArrayList<Beacons>();
     static final Map<String, String> BEACONS_LIST_MAP = new HashMap<>();
