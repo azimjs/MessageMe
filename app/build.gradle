@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.example.azim.messageme"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile fileTree(dir: 'libs', include: 'Parse-*.jar')
+    // add the following line, and replace "0.9.1" with the latest version
+    // of Estimote Android SDK; you'll find the latest version number on:
+    //   https://github.com/Estimote/Android-SDK/releases
+    compile 'com.estimote:sdk:0.9.1@aar'
+    compile 'com.google.android.gms:play-services-analytics:8.1.0'
+}

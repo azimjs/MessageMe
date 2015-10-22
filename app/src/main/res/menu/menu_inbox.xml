@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.azim.messageme.InboxActivity">
+    <!-- Search, should appear as action button -->
+    <item android:id="@+id/action_new_email"
+        android:title="New Email"
+        android:icon="@drawable/ic_action_new_email"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_refresh"
+        android:title="Refresh"
+        android:icon="@drawable/ic_action_refresh"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/show_closest_beacon"
+        android:title="@string/show_closest_beacon"
+        android:orderInCategory="101"
+        app:showAsAction="never" />
+</menu>
